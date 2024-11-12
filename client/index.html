@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>tRPC Vehicles</title>
+</head>
+<body>
+  <h1>Vehicle Management 🚗</h1>
+  
+  <div>
+    <h2>Vehicle List 🗂️</h2>
+    <ul id="vehicle-list"></ul>
+  </div>
+
+  <div>
+    <h2>Get Vehicle by ID 🔮</h2>
+    <input type="text" id="vehicle-id" placeholder="Enter Vehicle ID" />
+    <button id="get-vehicle">Get Vehicle</button>
+    <div id="vehicle-detail"></div>
+  </div>
+
+  <div>
+    <h2>Create New Vehicle 🚘</h2>
+    <form id="vehicle-form">
+      <input type="text" id="plate" placeholder="Plate" required />
+      <input type="text" id="year" placeholder="Year" required />
+      <select id="type" required>
+        <option value="car">Car</option>
+        <option value="motorcycle">Motorcycle</option>
+        <option value="truck">Truck</option>
+      </select>
+      <input type="text" id="model" placeholder="Model" required />
+      <input type="text" id="brand" placeholder="Brand" required />
+      <button type="submit">Create Vehicle</button>
+    </form>
+  </div>
+
+  <script src="dist/index.js"></script>
+</body>
+</html>
